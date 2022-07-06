@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Code Quiz</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="./css/style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div id="main-box">
+        <h2>Mona o Costanza Quiz</h2>
+        <p id="main-dialogue">
+          Welcome to the Mona o Costanza quiz. You will get a series of
+          questions, and have a few seconds to answer each question. Scoring is
+          awarded by how fast each question is answered. There is a penalty for
+          incorrect answers, so review all choices before submitting. Click the
+          button below to start the quiz.
+        </p>
+        <p id="question-display"></p>
+      </div>
+      <div id="second-box">
+        <ul id="list-answers"></ul>
+      </div>
+      <div id="timer-score">
+        <button id="start-button" class="btn btn-primary">Start Quiz</button>
+        <form id="add-initials">
+          <input
+            type="text"
+            placeholder="Enter your initials"
+            name="initials"
+            id="initials"
+            maxlength="3"
+          />
+        </form>
+        <button id="submit-button" class="btn btn-primary">Submit</button>
+        <button id="play-again" class="btn btn-primary">Play Again</button>
+        <button id="leaderboard" class="btn btn-primary">Leaderboard</button>
+      </div>
+    </div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
